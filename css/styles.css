@@ -6,7 +6,7 @@
 #a36, #a35, #a34, #a33, #a32, #a31{
   width:100px;
   height:100px;
-  background-color:#6d8bba;
+
   border:1px solid black;
 }
 
@@ -18,7 +18,7 @@
 #b36, #b35, #b34, #b33, #b32, #b31{
   width:100px;
   height:100px;
-  background-color:#6d8bba;
+
   border:1px solid black;
 }
 
@@ -29,10 +29,21 @@
   display:none;
 }
 
-#a1:hover, #a2:hover, #a3:hover, #a4:hover, #a5:hover, #a6:hover,
-#b1:hover, #b2:hover, #b3:hover, #b4:hover, #b5:hover, #b6:hover,
-#c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover,
-#d1:hover, #d2:hover, #d3:hover, #d4:hover, #d5:hover, #d6:hover{
+#a1:hover, #a2:hover , #a3:hover, #a4:hover, #a5:hover, #a6:hover,
+#a7:hover, #a10:hover , #a15:hover, #a16:hover, #a21:hover, #a22:hover,
+#a8:hover, #a11:hover , #a14:hover, #a17:hover, #a20:hover, #a23:hover,
+#a9:hover, #a12:hover , #a13:hover, #a18:hover, #a19:hover, #a24:hover,
+#a25:hover, #a26:hover, #a27:hover, #a28:hover, #a29:hover, #a30:hover,
+#a36:hover, #a35:hover, #a34:hover, #a33:hover, #a32:hover, #a31:hover{
+  background-color: black;
+}
+
+#b1:hover, #b2:hover , #b3:hover, #b4:hover, #b5:hover, #b6:hover,
+#b7:hover, #b10:hover , #b15:hover, #b16:hover, #b21:hover, #b22:hover,
+#b8:hover, #b11:hover , #b14:hover, #b17:hover, #b20:hover, #b23:hover,
+#b9:hover, #b12:hover , #b13:hover, #b18:hover, #b19:hover, #b24:hover,
+#b25:hover, #b26:hover, #b27:hover, #b28:hover, #b29:hover, #b30:hover,
+#b36:hover, #b35:hover, #b34:hover, #b33:hover, #b32:hover, #b31:hover{
   background-color: black;
 }
 
@@ -46,4 +57,22 @@
 
 button {
   margin-top:10px;
+}
+
+
+
+.missile {
+  display:none;
+}
+
+.col-md-2 {
+  background-color:#6d8bba;
+}
+
+.miss {
+  background-color: red;
+}
+
+.hit{
+  background-color: green;
 }
