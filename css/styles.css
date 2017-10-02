@@ -2,8 +2,8 @@
 #b1, #b2 , #b3, #b4, #b5, #b6,
 #c1, #c2 , #c3, #c4, #c5, #c6,
 #d1, #d2 , #d3, #d4, #d5, #d6{
-  width:100px;
-  height:100px;
+  width:50px;
+  height:50px;
   background-color:#6d8bba;
   border:1px solid black;
 }
@@ -22,10 +22,10 @@
   background-color: black;
 }
 
-.player2 {
+/*.player2 {
   display:none;
 }
 
 .combined {
   display:none;
-}
+}*/
