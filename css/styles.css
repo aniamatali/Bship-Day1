@@ -8,3 +8,10 @@
   border:1px solid black;
   margin-right:0px;
 }
+
+#missile1, #missile5, #missile9, #missile13, #missile17, #missile21,
+#missile2, #missile6, #missile10, #missile14, #missile18, #missile22,
+#missile3, #missile7, #missile11, #missile15, #missile19, #missile23,
+#missile4, #missile8, #missile12, #missile16, #missile20, #missile24  {
+  display:none;
+}
