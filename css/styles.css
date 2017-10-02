@@ -15,3 +15,10 @@
 #missile4, #missile8, #missile12, #missile16, #missile20, #missile24  {
   display:none;
 }
+
+#a1:hover, #a2:hover, #a3:hover, #a4:hover, #a5:hover, #a6:hover,
+#b1:hover, #b2:hover, #b3:hover, #b4:hover, #b5:hover, #b6:hover,
+#c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover,
+#d1:hover, #d2:hover, #d3:hover, #d4:hover, #d5:hover, #d6:hover{
+  background-color: black;
+}

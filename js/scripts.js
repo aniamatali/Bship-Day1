@@ -42,9 +42,7 @@ var scoreFunction = function(score){
 
     a1.push(+1);
     if (a1.length === 1) {
-    $(".player1").append("<p>Square Selected</p>");
   } else if (a1.length === 2) {
-    alert("hit");
     $("#missile1").show();
     score.push (1);
     console.log(score);
@@ -57,9 +55,7 @@ var scoreFunction = function(score){
 
     a2.push(+1);
     if (a2.length === 1) {
-    $(".player1").append("<p>Square Selected</p>");
   } else if (a2.length === 2) {
-    alert("hit");
     $("#missile2").show();
     score.push (1);
     console.log(score);
@@ -70,9 +66,7 @@ var scoreFunction = function(score){
   $("#a3").click(function() {
     a3.push(+1);
     if (a3.length === 1) {
-    alert("miss");
   } else if (a3.length === 2) {
-    alert("hit");
     $("#missile3").show();
     score.push (1);
     console.log(score);
@@ -83,9 +77,7 @@ var scoreFunction = function(score){
   $("#a4").click(function() {
     a4.push(+1);
     if (a4.length === 1) {
-    alert("miss");
   } else if (a4.length === 2) {
-    alert("hit");
     $("#missile4").show();
     score.push (1);
     console.log(score);
