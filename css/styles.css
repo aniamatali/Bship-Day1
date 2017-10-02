@@ -6,7 +6,6 @@
   height:100px;
   background-color:#6d8bba;
   border:1px solid black;
-  margin-right:0px;
 }
 
 #missile1, #missile5, #missile9, #missile13, #missile17, #missile21,
@@ -21,4 +20,12 @@
 #c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover,
 #d1:hover, #d2:hover, #d3:hover, #d4:hover, #d5:hover, #d6:hover{
   background-color: black;
+}
+
+.player2 {
+  display:none;
+}
+
+.combined {
+  display:none;
 }
