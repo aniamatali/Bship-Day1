@@ -72,30 +72,41 @@ $(document).ready(function() {
 
 $("#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a15, #a16, #a17, #a18, #a19, #a20, #a21, #a22, #a23, #a24, #a25, #a26, #a27, #a28, #a28, #a29, #a30, #a31, #a32, #a33, #a34, #a35, #a36").click(function() {
   var smtg = this.id;
+  var number = parseInt(smtg.replace("a",""));
+  if(board1[number-1] === 1){
+    board1[number-1] = 0;
+    alert("you hit a ship");
+    winning(board1);
+  } else if (board1[number-1] === 0){
+    alert("you miss");
+  }
 })
 
 $("#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b10, #b11, #b12, #b13, #b14, #b15, #b16, #b17, #b18, #b19, #b20, #b21, #b22, #b23, #b24, #b25, #b26, #b27, #b28, #b28, #b29, #b30, #b31, #b32, #b33, #b34, #b35, #b36").click(function() {
   var smtg2 = this.id;
+  var number = parseInt(smtg2.replace("b",""));
+  if(board2[number-1] === 1){
+    board2[number-1] = 0;
+    alert("you hit a ship");
+    winning(board2)
+  } else if (board2[number-1] === 0){
+    alert("you miss");
+  }
+
 })
 
-// $("").submit(function(event)){
-//   event.preventDefault();
-//   var player = 1;
-//   var player1 = new Player(player,board1);
-// }
-//
-// for (i = 0; i <= board1.length; i ++) {
-//   $("").click(function() {
-//     if ()
-//     board1[] = 1;
-//
-//
-//     if (a1.length === 1) {
-//   } else if (a1.length === 2) {
-//     $("#missile1").show();
-//     score.push (1);
-//     console.log(score);
-//     scoreFunction(score);
-//   }
-// })
+
+//winning function
+var winning = function(board){
+  var value = true;
+  board.forEach(function(bo) {
+    if(bo != 0){
+      value = false;
+    }
+  })
+  if(value === true){
+    alert("you win");
+  }
+}
+
 });
