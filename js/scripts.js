@@ -24,6 +24,20 @@ var Players = function(player,board){
   this.board = board;
 }
 
+//winning function
+var winning = function(board){
+  var value = true;
+  board.forEach(function(bo) {
+    if(bo === 1){
+      value = false;
+    }
+  })
+  if(value === true){
+    alert("you win");
+    index = 2;
+  }
+}
+
 var score = [];
 
 var player1Value = [];
@@ -112,17 +126,5 @@ $("#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b10, #b11, #b12, #b13, #b14, #b
 })
 
 
-//winning function
-var winning = function(board){
-  var value = true;
-  board.forEach(function(bo) {
-    if(bo === 1){
-      value = false;
-    }
-  })
-  if(value === true){
-    alert("you win");
-  }
-}
 
 });
