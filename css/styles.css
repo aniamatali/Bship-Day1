@@ -22,6 +22,18 @@
   border:1px solid black;
 }
 
+#c1, #c2 , #c3, #c4, #c5, #c6,
+#c7, #c10 , #c15, #c16, #c21, #c22,
+#c8, #c11 , #c14, #c17, #c20, #c23,
+#c9, #c12 , #c13, #c18, #c19, #c24,
+#c25, #c26, #c27, #c28, #c29, #c30,
+#c36, #c35, #c34, #c33, #c32, #c31{
+  width:100px;
+  height:100px;
+
+  border:1px solid black;
+}
+
 #missile1, #missile5, #missile9, #missile13, #missile17, #missile21,
 #missile2, #missile6, #missile10, #missile14, #missile18, #missile22,
 #missile3, #missile7, #missile11, #missile15, #missile19, #missile23,
@@ -44,6 +56,15 @@
 #b9:hover, #b12:hover , #b13:hover, #b18:hover, #b19:hover, #b24:hover,
 #b25:hover, #b26:hover, #b27:hover, #b28:hover, #b29:hover, #b30:hover,
 #b36:hover, #b35:hover, #b34:hover, #b33:hover, #b32:hover, #b31:hover{
+  background-color: black;
+}
+
+#c1:hover, #c2:hover , #c3:hover, #c4:hover, #c5:hover, #c6:hover,
+#c7:hover, #c10:hover , #c15:hover, #c16:hover, #c21:hover, #c22:hover,
+#c8:hover, #c11:hover , #c14:hover, #c17:hover, #c20:hover, #c23:hover,
+#c9:hover, #c12:hover , #c13:hover, #c18:hover, #c19:hover, #c24:hover,
+#c25:hover, #c26:hover, #c27:hover, #c28:hover, #c29:hover, #c30:hover,
+#c36:hover, #c35:hover, #c34:hover, #c33:hover, #c32:hover, #c31:hover{
   background-color: black;
 }
 

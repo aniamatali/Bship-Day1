@@ -66,7 +66,7 @@ $(document).ready(function() {
      player1Value.forEach(function(value){
        board1[value] = 1;
      })
-     $(".player1").hide();
+    //  $(".player1").hide();
      $(".player2").show();
      console.log(player1Value);
      console.log(board1);
@@ -81,7 +81,7 @@ $(document).ready(function() {
       player2Value.forEach(function(value){
         board2[value] = 1;
       })
-      $(".player2").hide();
+      // $(".player2").hide();
       $(".combined").show();
       index = 0;
       console.log(player2Value);

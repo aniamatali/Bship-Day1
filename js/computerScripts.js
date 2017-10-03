@@ -69,6 +69,7 @@ var computerTurn = function(){
       computerTurn();
     } else if (board1[compValue-1] === 0){
       alert("computer miss");
+      alert(compValue)
       $("#a"+compValue).addClass("miss");
       board1[compValue-1] = 2;
     }
