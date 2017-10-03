@@ -19,7 +19,8 @@ var board1 =
 
 //constructor player
 
-var Players = function(player,board){
+var Players = function(playername, player, board){
+  this.playername = playername;
   this.player = player;
   this.board = board;
 }
@@ -53,9 +54,16 @@ var changeTurn = (function(index){
      return index -= 1;
   }
 })
+
+var player1 = new Players(prompt("Player 1, Enter your Name."), 0);
+var player2 = new Players(prompt("Player 2, Enter your Name."), 0);
+var players = [player1, player2];
 //User Interface Logic**********************************************************
 
 $(document).ready(function() {
+
+  $(".playerA").text(player1.playername);
+  $(".playerB").text(player2.playername);
 
   $("form.player1Board").submit(function(event){
      event.preventDefault();
@@ -110,7 +118,8 @@ $("#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a
 $("#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b10, #b11, #b12, #b13, #b14, #b15, #b16, #b17, #b18, #b19, #b20, #b21, #b22, #b23, #b24, #b25, #b26, #b27, #b28, #b28, #b29, #b30, #b31, #b32, #b33, #b34, #b35, #b36").click(function() {
   var smtg2 = this.id;
   var number = parseInt(smtg2.replace("b",""));
-  if(index === 1 && board1[number-1] != 2){
+  debugger;
+  if(index === 1 && board2[number-1] != 2){
     if(board2[number-1] === 1){
       alert("you hit a ship");
       $(this).addClass("hit");

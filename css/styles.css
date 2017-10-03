@@ -1,3 +1,13 @@
+.container {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg.jpeg");
+  background-position:center;
+}
+
+@font-face {
+font-family: DolceVita;
+src: url(../fonts/DolceVita.ttf);
+}
+
 #a1, #a2 , #a3, #a4, #a5, #a6,
 #a7, #a10 , #a15, #a16, #a21, #a22,
 #a8, #a11 , #a14, #a17, #a20, #a23,
@@ -22,12 +32,6 @@
   border:1px solid black;
 }
 
-#missile1, #missile5, #missile9, #missile13, #missile17, #missile21,
-#missile2, #missile6, #missile10, #missile14, #missile18, #missile22,
-#missile3, #missile7, #missile11, #missile15, #missile19, #missile23,
-#missile4, #missile8, #missile12, #missile16, #missile20, #missile24  {
-  display:none;
-}
 
 #a1:hover, #a2:hover , #a3:hover, #a4:hover, #a5:hover, #a6:hover,
 #a7:hover, #a10:hover , #a15:hover, #a16:hover, #a21:hover, #a22:hover,
@@ -47,6 +51,12 @@
   background-color: black;
 }
 
+.topper {
+  text-align:center;
+  font-family:DolceVita;
+  font-size:100;
+}
+
 .player2 {
   display:none;
 }
@@ -57,9 +67,8 @@
 
 button {
   margin-top:10px;
+
 }
-
-
 
 .missile {
   display:none;
@@ -70,9 +79,35 @@ button {
 }
 
 .miss {
-  background-color: red;
+  background-color:white;
+  background-image:url("../img/x.png");
 }
 
 .hit{
-  background-color: green;
+  background-image:url("../img/rocket.png");
+}
+
+.row {
+  margin-left:260px;
+  text-align:center;
+}
+
+h1 {
+  text-align:center;
+  font-family:DolceVita;
+  color:white;
+}
+
+form {
+  text-align:center;
+
+}
+
+button {
+  width:500px;
+  margin-right:15px;
+}
+
+.container {
+  background-color:#f3f3f3;
 }
