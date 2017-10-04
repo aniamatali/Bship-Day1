@@ -68,6 +68,9 @@
 #c36:hover, #c35:hover, #c34:hover, #c33:hover, #c32:hover, #c31:hover{
   background-color: black;
 }
+.container {
+  margin-left: 5%;
+}
 
 .player2 {
   display:none;

@@ -104,6 +104,10 @@
   background-color: black;
 }
 
+.container {
+  margin-left: 5%;
+}
+
 .player2 {
   display:none;
 }

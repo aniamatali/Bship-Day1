@@ -22,6 +22,7 @@ var board2 =
 var player1Value = [];
 var player2Value = [];
 var index = 2;
+var boxes;
 
 ///Changing turn between Player 1 and Player 2
 var changeTurn = function(index){
@@ -39,7 +40,7 @@ var computerRand = function(){
 
 ///Computer Selection function
 var compSelect = function(){
-  for(i=0;i<5;i++){
+  for(i=0;i<boxes;i++){
     var compValue = computerRand();
     while(board2[compValue-1] === 1){
       compValue = computerRand();
@@ -88,6 +89,19 @@ var winning = function(board){
   };
 };
 
+///Set a number of ships
+var boxCk = function(){
+  boxes = parseInt(prompt("How many ships do you want to deploy?"));
+  if (boxes <= 36 && boxes >= 1) {
+
+  }
+  else {
+    alert("Please select a number of ships between 1 and 35");
+    boxCk();
+  }
+}
+
+
 
 //User Interface Logic**********************************************************
 
@@ -95,6 +109,7 @@ $(document).ready(function(){
 
   var player1 = prompt("Player1, Enter your name : ");
   $("span").text(player1);
+  boxCk();
 
   $("form.player1Board").submit(function(event){
      event.preventDefault();
@@ -102,14 +117,19 @@ $(document).ready(function(){
        var value = $(this).val();
        player1Value.push(value);
      });
-     player1Value.forEach(function(value){
-       board1[value] = 1;
-     })
-     $(".player1").hide();
-     $(".combined").show();
-     index = 1;
-     compSelect();
-   });
+    if(player1Value.length === boxes){
+      player1Value.forEach(function(value){
+        board1[value] = 1;
+      })
+      $(".player1").hide();
+      $(".combined").show();
+      index = 1;
+      compSelect();
+    } else {
+      alert("Please put the correct amount of ships")
+      player1Value = [];
+    }
+  });
 
   $("#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b10, #b11, #b12, #b13, #b14, #b15, #b16, #b17, #b18, #b19, #b20, #b21, #b22, #b23, #b24, #b25, #b26, #b27, #b28, #b28, #b29, #b30, #b31, #b32, #b33, #b34, #b35, #b36").click(function() {
     var playerID = this.id;

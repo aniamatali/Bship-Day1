@@ -19,8 +19,8 @@ var board2 =
 
 ///constructor player
 
-var Players = function(playername, player, board){
-  this.playername = playername;
+var Players = function(playerName, player, board){
+  this.playerName = playerName;
   this.player = player;
   this.board = board;
 }
@@ -28,6 +28,7 @@ var Players = function(playername, player, board){
 ///Global Variables
 var player1Value = [];
 var player2Value = [];
+var boxes;
 
 var index = 2;
 ////Index = 2, because it will prevent going checking Hit/Miss function
@@ -39,19 +40,33 @@ var checking = function(player,playerValue,board){
     var value = $(this).val();
     playerValue.push(value);
   });
-  playerValue.forEach(function(value){
-    board[value] = 1;
-  })
-}
+  if(playerValue.length === boxes){
+    playerValue.forEach(function(value){
+      board[value] = 1;
+      if(player === "player1"){
+        $(".player1").hide();
+        $(".player2").show();
+      } else if(player === "player2"){
+        $(".player2").hide();
+        $(".combined").show();
+        index = 0;
+      }
+    })
+  } else {
+    alert("Please put the correct amount of ships")
+    playerValue = [];
+    return playerValue;
+  };
+};
 
 ///Changing turn between Player 1 and Player 2
-var changeTurn = (function(index){
+var changeTurn = function(index){
   if(index === 0){
      return index += 1;
   } else if (index === 1){
      return index -= 1;
   };
-});
+};
 
 ///Checking Hit or Miss function
 var hitMiss = function(playerID,number,board){
@@ -77,9 +92,9 @@ var winning = function(board){
   });
   if(value === true){
     if(index === 0){
-      alert("Player 2 Win");
+      alert(player2.playerName + " Wins");
     } else if(index === 1){
-      alert("Player 1 Win")
+      alert(player1.playerName + " Wins")
     }
     index = 2;
   };
@@ -90,27 +105,36 @@ var player1 = new Players(prompt("Player 1, Enter your Name."), 0);
 var player2 = new Players(prompt("Player 2, Enter your Name."), 0);
 var players = [player1, player2];
 
+///Set a number of ships
+var boxCk = function(){
+  boxes = parseInt(prompt("How many ships do you want to deploy?"));
+  if (boxes <= 36 && boxes >= 1) {
+
+  }
+  else {
+    alert("Please select a number of ships between 1 and 35");
+    boxCk();
+  }
+}
+
+
 
 //User Interface Logic**********************************************************
 
 $(document).ready(function() {
 
-  $(".playerA").text(player1.playername);
-  $(".playerB").text(player2.playername);
+  $(".playerA").text(player1.playerName);
+  $(".playerB").text(player2.playerName);
+  boxCk();
 
   $("form.player1Board").submit(function(event){
      event.preventDefault();
-     checking("player1",player1Value,board1)
-     $(".player1").hide();
-     $(".player2").show();
+     player1Value = checking("player1",player1Value,board1);
    });
 
   $("form.player2Board").submit(function(event){
       event.preventDefault();
-      checking("player2",player2Value,board2)
-      $(".player2").hide();
-      $(".combined").show();
-      index = 0;
+      player2Value = checking("player2",player2Value,board2);
     });
 
   $("#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a15, #a16, #a17, #a18, #a19, #a20, #a21, #a22, #a23, #a24, #a25, #a26, #a27, #a28, #a28, #a29, #a30, #a31, #a32, #a33, #a34, #a35, #a36, #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b10, #b11, #b12, #b13, #b14, #b15, #b16, #b17, #b18, #b19, #b20, #b21, #b22, #b23, #b24, #b25, #b26, #b27, #b28, #b28, #b29, #b30, #b31, #b32, #b33, #b34, #b35, #b36").click(function() {
