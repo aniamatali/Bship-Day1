@@ -18,7 +18,7 @@ var board1 =
     0,0,0,0,0,0]
 
 
-
+var player1 = prompt("Player1, Enter your name : ");
 //winning function
 var winning = function(board){
   var value = true;
@@ -28,7 +28,7 @@ var winning = function(board){
     }
   })
   if(value === true){
-    alert("you win");
+    alert("You Win");
     index = 2;
   }
 }
@@ -43,7 +43,7 @@ var winningComp = function(board){
     }
   })
   if(value === true){
-    alert("Computer win");
+    alert("Computer Wins");
     index = 2;
   }
 }
@@ -69,13 +69,13 @@ var computerTurn = function(){
   }
   if(index === 1 && board1[compValue-1] != 2){
     if(board1[compValue-1] === 1){
-      alert("computer hit a ship");
+      alert("Computer hit a ship");
       $("#a"+compValue).addClass("hit");
       board1[compValue-1] = 2;
       winningComp(board1);
       computerTurn();
     } else if (board1[compValue-1] === 0){
-      alert("computer miss");
+      alert("Computer miss");
       $("#a"+compValue).addClass("miss");
       board1[compValue-1] = 2;
     }
@@ -102,6 +102,7 @@ var computerRand = function(){
 
 $(document).ready(function(){
 
+  $("span").text(player1);
 
   $("form.player1Board").submit(function(event){
      event.preventDefault();
@@ -124,12 +125,12 @@ $("#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b10, #b11, #b12, #b13, #b14, #b
   var number = parseInt(smtg2.replace("b",""));
   if(index === 1 && board2[number-1] != 2){
     if(board2[number-1] === 1){
-      alert("you hit a ship");
+      alert("You hit a ship");
       $(this).addClass("hit");
       board2[number-1] = 2;
       winning(board2);
     } else if (board2[number-1] === 0){
-      alert("you miss");
+      alert("You miss");
       $(this).addClass("miss");
       board2[number-1] = 2;
       computerTurn();

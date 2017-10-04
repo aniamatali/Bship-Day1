@@ -4,9 +4,9 @@
 #a9, #a12 , #a13, #a18, #a19, #a24,
 #a25, #a26, #a27, #a28, #a29, #a30,
 #a36, #a35, #a34, #a33, #a32, #a31{
-  width:100px;
-  height:100px;
-
+  width:80px;
+  height:80px;
+  display: table-cell;
   border:1px solid black;
 }
 
@@ -16,9 +16,9 @@
 #b9, #b12 , #b13, #b18, #b19, #b24,
 #b25, #b26, #b27, #b28, #b29, #b30,
 #b36, #b35, #b34, #b33, #b32, #b31{
-  width:100px;
-  height:100px;
-
+  width:80px;
+  height:80px;
+  display: table-cell;
   border:1px solid black;
 }
 
@@ -29,9 +29,9 @@
 #c9, #c12 , #c13, #c18, #c19, #c24,
 #c25, #c26, #c27, #c28, #c29, #c30,
 #c36, #c35, #c34, #c33, #c32, #c31{
-  width:100px;
-  height:100px;
-
+  width:80px;
+  height:80px;
+  display: table-cell;
   border:1px solid black;
 }
 
@@ -77,14 +77,12 @@
 }
 .combined {
   display: none;
-  height: 1600px;
-  width: 1600px;
-  margin-left: -120px;
   margin-top: 70px;
-}
+  }
 
 button {
   margin-top:10px;
+  margin-bottom: 20px;
 }
 
 
@@ -103,4 +101,8 @@ button {
 
 .hit{
   background-color: green;
+}
+
+form {
+  margin-bottom:10px;
 }
