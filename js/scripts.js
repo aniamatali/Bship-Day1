@@ -92,9 +92,20 @@ var winning = function(board){
   });
   if(value === true){
     if(index === 0){
-      alert(player2.playerName + " Wins");
+      alert(player1.playerName + " Wins");
+      for(i=0;i<36;i++){
+        if(board1[i] === 1){
+          $("#a" + (i+1)).addClass("remain");
+        }
+      }
+
     } else if(index === 1){
-      alert(player1.playerName + " Wins")
+      alert(player2.playerName + " Wins")
+      for(i=0;i<36;i++){
+        if(board1[i] === 1){
+          $("#a" + (i+1)).addClass("remain");
+        }
+      }
     }
     index = 2;
   };
