@@ -102,8 +102,8 @@ var winning = function(board){
     } else if(index === 1){
       alert(player2.playerName + " Wins")
       for(i=0;i<36;i++){
-        if(board1[i] === 1){
-          $("#a" + (i+1)).addClass("remain");
+        if(board2[i] === 1){
+          $("#b" + (i+1)).addClass("remain");
         }
       }
     }

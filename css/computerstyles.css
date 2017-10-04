@@ -105,6 +105,9 @@ button {
 .hit{
   background-color: green;
 }
+.remain{
+  background-color: yellow;
+}
 
 form {
   margin-bottom:10px;

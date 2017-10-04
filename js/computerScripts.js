@@ -82,8 +82,18 @@ var winning = function(board){
   if(value === true){
     if(index === 1){
       alert("you win");
+      for(i=0;i<36;i++){
+        if(board1[i] === 1){
+          $("#a" + (i+1)).addClass("remain");
+        }
+      }
     } else if(index === 0){
       alert("Computer win")
+      for(i=0;i<36;i++){
+        if(board2[i] === 1){
+          $("#b" + (i+1)).addClass("remain");
+        }
+      }
     };
     index = 2;
   };
