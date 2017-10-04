@@ -22,6 +22,29 @@
   border:1px solid black;
 }
 
+#ac1, #ac2 , #ac3, #ac4, #ac5, #ac6,
+#ac7, #ac10 , #ac15, #ac16, #ac21, #ac22,
+#ac8, #ac11 , #ac14, #ac17, #ac20, #ac23,
+#ac9, #ac12 , #ac13, #ac18, #ac19, #ac24,
+#ac25, #ac26, #ac27, #ac28, #ac29, #ac30,
+#ac36, #ac35, #ac34, #ac33, #ac32, #ac31{
+  width:80px;
+  height:80px;
+  display: table-cell;
+  border:1px solid black;
+}
+
+#bc1, #bc2 , #bc3, #bc4, #bc5, #bc6,
+#bc7, #bc10 , #bc15, #bc16, #bc21, #bc22,
+#bc8, #bc11 , #bc14, #bc17, #bc20, #bc23,
+#bc9, #bc12 , #bc13, #bc18, #bc19, #bc24,
+#bc25, #bc26, #bc27, #bc28, #bc29, #bc30,
+#bc36, #bc35, #bc34, #bc33, #bc32, #bc31{
+  width:80px;
+  height:80px;
+  display: table-cell;
+  border:1px solid black;
+}
 
 #c1, #c2 , #c3, #c4, #c5, #c6,
 #c7, #c10 , #c15, #c16, #c21, #c22,
@@ -51,6 +74,24 @@
 #b9:hover, #b12:hover , #b13:hover, #b18:hover, #b19:hover, #b24:hover,
 #b25:hover, #b26:hover, #b27:hover, #b28:hover, #b29:hover, #b30:hover,
 #b36:hover, #b35:hover, #b34:hover, #b33:hover, #b32:hover, #b31:hover{
+  background-color: black;
+}
+
+#ac1:hover, #ac2:hover , #ac3:hover, #ac4:hover, #ac5:hover, #ac6:hover,
+#ac7:hover, #ac10:hover , #ac15:hover, #ac16:hover, #ac21:hover, #ac22:hover,
+#ac8:hover, #ac11:hover , #ac14:hover, #ac17:hover, #ac20:hover, #ac23:hover,
+#ac9:hover, #ac12:hover , #ac13:hover, #ac18:hover, #ac19:hover, #ac24:hover,
+#ac25:hover, #ac26:hover, #ac27:hover, #ac28:hover, #ac29:hover, #ac30:hover,
+#ac36:hover, #ac35:hover, #ac34:hover, #ac33:hover, #ac32:hover, #ac31:hover{
+  background-color: black;
+}
+
+#bc1:hover, #bc2:hover , #bc3:hover, #bc4:hover, #bc5:hover, #bc6:hover,
+#bc7:hover, #bc10:hover , #bc15:hover, #bc16:hover, #bc21:hover, #bc22:hover,
+#bc8:hover, #bc11:hover , #bc14:hover, #bc17:hover, #bc20:hover, #bc23:hover,
+#bc9:hover, #bc12:hover , #bc13:hover, #bc18:hover, #bc19:hover, #bc24:hover,
+#bc25:hover, #bc26:hover, #bc27:hover, #bc28:hover, #bc29:hover, #bc30:hover,
+#bc36:hover, #bc35:hover, #bc34:hover, #bc33:hover, #bc32:hover, #bc31:hover{
   background-color: black;
 }
 
