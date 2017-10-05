@@ -1,3 +1,57 @@
+body {
+  background-color:black;
+}
+
+.container {
+  width:1230px;
+  height:800px;
+  background:black;
+  color:white;
+  margin-top:100px;
+  background-image:url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-371628.jpg");
+  border: 15px solid #43344c;
+}
+
+#topper {
+  text-align:center;
+  font-family: 'Poiret One';
+  background-color:#43344c;
+}
+
+#topper h1 {
+  font-size:100px;
+}
+
+.btn-transparent{
+  background: transparent;
+
+  color: white;
+  -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+  -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+  border: 2px solid white;
+}
+
+.player1 {
+  margin-left:100px;
+  margin-right:100px;
+  color:white;
+}
+
+.player2 {
+  margin-left:100px;
+  margin-right:100px;
+  display:none;
+}
+
+.combined {
+  display: none;
+  margin-left:100px;
+  margin-right:100px;
+  color:white;
+}
+
 #a1, #a2 , #a3, #a4, #a5, #a6,
 #a7, #a10 , #a15, #a16, #a21, #a22,
 #a8, #a11 , #a14, #a17, #a20, #a23,
@@ -104,20 +158,13 @@
   background-color: black;
 }
 
-.container {
-  margin-left: 5%;
-}
 
-.player2 {
-  display:none;
-}
+
+
 .col-md-6 {
   float: left;
 }
-.combined {
-  display: none;
-  margin-top: 70px;
-}
+
 
 button {
   margin-top:10px;

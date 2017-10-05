@@ -1,3 +1,48 @@
+body {
+  background-color:black;
+}
+
+#topper {
+  text-align:center;
+  font-family: 'Poiret One';
+  background-color:#43344c;
+}
+
+#topper h1 {
+  font-size:100px;
+}
+
+.container {
+  width:1230px;
+  height:800px;
+  background:black;
+  color:white;
+  margin-top:100px;
+  border: 15px solid #43344c;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("https://vignette3.wikia.nocookie.net/residentevil/images/6/68/Queen-Zenobia_20111121.jpg/revision/latest?cb=20120509221201");
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.player2 {
+  margin-left:100px;
+  margin-right:100px;
+  display:none;
+}
+
+.player1 {
+  margin-left:100px;
+  margin-right:100px;
+  color:white;
+}
+
+.combined {
+  display: none;
+  margin-left:100px;
+  margin-right:100px;
+  color:white;
+}
+
 #a1, #a2 , #a3, #a4, #a5, #a6,
 #a7, #a10 , #a15, #a16, #a21, #a22,
 #a8, #a11 , #a14, #a17, #a20, #a23,
@@ -21,7 +66,6 @@
   display: table-cell;
   border:1px solid black;
 }
-
 
 #c1, #c2 , #c3, #c4, #c5, #c6,
 #c7, #c10 , #c15, #c16, #c21, #c22,
@@ -68,31 +112,16 @@
 #c36:hover, #c35:hover, #c34:hover, #c33:hover, #c32:hover, #c31:hover{
   background-color: black;
 }
-.container {
-  margin-left: 5%;
-}
 
-.player2 {
-  display:none;
-}
 .col-md-6 {
   float: left;
 }
-.combined {
-  display: none;
-  margin-top: 70px;
-  }
 
 button {
   margin-top:10px;
   margin-bottom: 20px;
 }
 
-
-
-.missile {
-  display:none;
-}
 
 .col-md-2 {
   background-color:#6d8bba;
